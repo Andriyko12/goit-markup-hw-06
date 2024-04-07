@@ -122,7 +122,7 @@ address {
 	display: none;
 }
 
-header-open-menu-btn {
+.header-open-menu-btn {
 	padding: 0;
 	background-color: transparent;
 	cursor: pointer;
@@ -181,6 +181,10 @@ header-open-menu-btn {
 	line-height: 1.11;
 	letter-spacing: 0.02em;
 	color: #2e2f42;
+}
+
+.mob-menu-current {
+	color: #404bbf;
 }
 
 .mob-menu-address {
@@ -307,14 +311,13 @@ header-open-menu-btn {
 /* ===Hero=== */
 .hero {
 	background: #2e2f42;
-	padding-top: 188px;
-	padding-bottom: 188px;
+	padding-top: 72px;
+	padding-bottom: 72px;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url(../images/hero/hero-bg-mob-min.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	max-width: 1440px;
 	margin: 0 auto;
 }
 
@@ -366,6 +369,8 @@ header-open-menu-btn {
 	.hero {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url(../images/hero/hero-bg-tab-min.jpg);
+		padding-top: 112px;
+		padding-bottom: 112px;
 	}
 
 	@media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -388,6 +393,9 @@ header-open-menu-btn {
 	.hero {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url(../images/hero/hero-bg-min.jpg);
+		padding-top: 188px;
+		padding-bottom: 188px;
+		max-width: 1440px;
 	}
 
 	@media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -423,16 +431,14 @@ header-open-menu-btn {
 .about-item-title {
 	font-weight: 500;
 	font-size: 36px;
-	/* font-size: 20px; */
 	line-height: 1.11;
-	/* line-height: 1.2; */
 	letter-spacing: 0.02em;
 	color: #2e2f42;
 	margin-bottom: 8px;
+	text-align: center;
 }
 
 .about-item-text {
-	/* font-weight: 400; */
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -449,6 +455,10 @@ header-open-menu-btn {
 
 	.about-item {
 		flex-basis: calc((100% - 24px) / 2);
+	}
+
+	.about-item-title {
+		text-align: left;
 	}
 }
 
@@ -572,8 +582,7 @@ header-open-menu-btn {
 
 @media screen and (min-width: 768px) {
 	.team-container {
-		padding-left: 108px;
-		padding-right: 108px;
+		max-width: 584px;
 	}
 
 	.team-list {
@@ -589,6 +598,7 @@ header-open-menu-btn {
 	.team-container {
 		padding-left: 15px;
 		padding-right: 15px;
+		max-width: 1158px;
 	}
 	.team-item {
 		flex-basis: calc((100% - 3 * 24px) / 4)
@@ -841,7 +851,7 @@ header-open-menu-btn {
 
 @media screen and (min-width: 768px) {
 	.footer-container {
-		padding-left: 123px;
+		max-width: 584px;
 		gap: 72px 24px;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -872,7 +882,7 @@ header-open-menu-btn {
 		padding-bottom: 100px;
 	}
 	.footer-container {
-		padding-left: 15px;
+		max-width: 1158px;
 		justify-content: space-between;
 	}
 }
